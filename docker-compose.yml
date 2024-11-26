@@ -1,7 +1,7 @@
 services:
   fastapi:
     build: .
-    container_name: user-microservice-fastapi
+    container_name: microservice-terraform-deploy-aws-gcp
     ports:
       - "8000:8000"
     volumes:
