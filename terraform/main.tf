@@ -12,8 +12,8 @@ terraform {
 }
 
 provider "google" {
-  project = "steady-course-442905-f1"
-  region  = "asia-south1"
+  project = var.project_id
+  region  = var.region
 }
 
 # you can get current google_client_config by running `gcloud auth application-default login` or default credentials
@@ -21,7 +21,7 @@ data "google_client_config" "default" {}
 
 provider "docker" {
   registry_auth {
-    address  = "asia-south1-docker.pkg.dev"
+    address  = "${var.region}-docker.pkg.dev"
     username = "oauth2accesstoken"
     password = data.google_client_config.default.access_token
   }
