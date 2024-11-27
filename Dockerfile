@@ -1,5 +1,5 @@
-# Use Python 3.10 as the base image
-FROM python:3.10-slim
+# Specify the platform for the base image
+FROM --platform=linux/amd64 python:3.10-slim
 
 # Set the working directory in the container
 WORKDIR /app

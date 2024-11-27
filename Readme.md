@@ -15,3 +15,9 @@ gcloud auth application-default login
 <!-- if new provider added -->
 
 terraform init -upgrade
+
+<!-- get gcloud token for test -->
+
+gcloud auth print-identity-token
+
+<!-- POSTMAN set Authorization Bearer TOKEN and send GET request to cloud run URL -->

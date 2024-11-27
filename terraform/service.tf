@@ -27,6 +27,9 @@ resource "google_cloud_run_service" "user_microservice_tf_cloud_run_service" {
     spec {
       containers {
         image = docker_registry_image.user_microservice_tf_registry_image.name
+        ports {
+          container_port = 8080
+        }
       }
     }
   }
