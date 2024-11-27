@@ -1,5 +1,5 @@
 
-resource "google_storage_bucket" "um_bucket" {
+resource "google_storage_bucket" "user_microservice_cloud_storage_bucket" {
   # Bucket Name: user-microservice-bucket-test
   name = "user-microservice-bucket-test"
   # The bucket is created in this region [asia-south1]

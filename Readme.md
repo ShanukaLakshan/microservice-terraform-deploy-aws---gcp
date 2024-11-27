@@ -11,3 +11,7 @@ gcloud run deploy user-microservice-fastapi --source .
 <!-- If terraform plan is not working due to access token issue-->
 
 gcloud auth application-default login
+
+<!-- if new provider added -->
+
+terraform init -upgrade
