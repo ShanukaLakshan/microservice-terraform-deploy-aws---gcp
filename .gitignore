@@ -6,3 +6,8 @@
 *.pyd
 *.gitignore
 .dockerignore
+
+# TERRAFORM
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
